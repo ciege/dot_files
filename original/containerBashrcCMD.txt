@@ -1,0 +1,16 @@
+cat <<EOF >> ~/.bashrc
+alias ll='ls -al --color'
+alias lt='ls -altr --color'
+alias psg='ps aux | grep '
+alias h='history | grep '
+alias s='sudo '
+alias gitc='git clone '
+alias c='clear'
+alias k='kubectl '
+alias kg='k get '
+alias kga='kg --all-namespaces '
+alias kd='k describe '
+alias kge='kga certificatesigningrequests,clusterrolebindings,clusterroles,componentstatuses,configmaps,controllerrevisions,controllerrevisions,customresourcedefinition,daemonsets,deployments,endpoints,events,horizontalpodautoscalers,ingresses,jobs,limitranges,namespaces,networkpolicies,nodes,persistentvolumeclaims,persistentvolumes,poddisruptionbudgets,pods,podsecuritypolicies,podtemplates,replicasets,replicationcontrollers,resourcequotas,rolebindings,roles,secrets,serviceaccounts,services,statefulsets,storageclasses'
+PS1='\t\e[0;35m\u\e\e[0;33m@\h \e\e[0;32m\w\$ \e[m'
+EOF
+. ~/.bashrc

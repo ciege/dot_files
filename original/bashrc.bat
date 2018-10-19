@@ -1,0 +1,1 @@
+cat ~/projects/dot_files/original/containerBashrcCMD.txt | clip
