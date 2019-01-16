@@ -12,5 +12,6 @@ alias kga='kg --all-namespaces '
 alias kd='k describe '
 alias kge='kga certificatesigningrequests,clusterrolebindings,clusterroles,componentstatuses,configmaps,controllerrevisions,controllerrevisions,customresourcedefinition,daemonsets,deployments,endpoints,events,horizontalpodautoscalers,ingresses,jobs,limitranges,namespaces,networkpolicies,nodes,persistentvolumeclaims,persistentvolumes,poddisruptionbudgets,pods,podsecuritypolicies,podtemplates,replicasets,replicationcontrollers,resourcequotas,rolebindings,roles,secrets,serviceaccounts,services,statefulsets,storageclasses'
 PS1='\t\e[0;35m\u\e\e[0;33m@\h \e\e[0;32m\w\$ \e[m'
+echo -e '\033]2;'${USER}@${HOSTNAME}'\007'
 EOF
 . ~/.bashrc
